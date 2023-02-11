@@ -1,0 +1,8 @@
+type Deploy @entity(immutable: true) {
+  id: Bytes!
+  tokenAddress: Bytes! # address
+  factoryContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
